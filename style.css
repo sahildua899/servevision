@@ -289,7 +289,7 @@
 /* Testing Tesimonials */
 article {
     /* limit the width of the article container */
-    width: 350px;
+    width: 300px;
     /* display the contents in a column */
     display: flex;
     flex-direction: column;

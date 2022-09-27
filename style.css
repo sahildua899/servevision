@@ -500,7 +500,7 @@ article {
     }
     .testimonial-main-section {
         flex-direction: column;
-        width: auto;
+        width: 90%;
         align-items: flex-start;
     }
     .testimonial-two, .testimonial-three {

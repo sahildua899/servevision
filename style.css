@@ -1,0 +1,513 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.nav-link {
+    color: black !important;
+    font-weight: bold;
+}
+.active {
+    color: white;
+}
+.navbar {
+    position: fixed;
+    width: 100vw;
+    top: 0%;
+    background-color: white;
+    z-index: 10000;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+.navbar-toggler {
+    color: white;
+}
+
+#background-video {
+    height: 100vh !important;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #background-video-mobile {
+    display: none;
+  }
+
+.background-image-section {
+    height: 100vh;
+    background-size: cover;
+    padding-top: 5%;
+    
+}
+.background-image-section h2 {
+    color: #005171;
+    font-size: 43px;
+    text-align:right;
+}
+
+
+.navbar-toggler span {
+    color: white;
+}
+
+.background-left-section {
+    width: 30%;
+}
+.background-right-section {
+    width: 50%;
+}
+.background-main-section {
+    display: flex;
+    /* width: 100vw; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+}
+.needservice {
+    color: #0090c8;
+    text-align: right;
+}
+.image-button-section {
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+}
+.image-button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow:0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #6d5dfc;
+    color: #E4EBF5;
+    font-size: 25px;
+    display: flex;
+    user-select: none;
+}
+.image-button:hover {
+    color: #FFFFFF;
+}
+.image-button:active {
+    box-shadow: inset 0.2rem 0.2rem 1rem #5b0eeb, inset -0.2rem -0.2rem 1rem #8abdff;
+}
+.glimpse-section {
+    background: #078bbf;
+    height: 100vh;
+    padding-top: 30px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    user-select: none;
+}
+
+.glimpse-section-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.glimpse-section h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.glimpse-section p {
+    text-align: justify;
+    color: white;
+}
+.business-we-own {
+    background: white;
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.business-we-own h2 {
+    font-size: 56px;
+}
+.logos-section {
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto ;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+.logos-section img {
+    width: 150px;
+    height: auto;
+}
+.services-section {
+    background: url('./media/images/backgroundservice.jpg');
+    /* height: 100vh; */
+    background-size: cover;
+    user-select: none;
+}
+.service-row-one {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.services-section {
+    /* text-align: center; */
+    padding: 50px 0px;
+    text-transform: uppercase;
+}
+.service-row-one {
+    display: flex;
+    margin-top: 100px;
+}
+.main-service-heading {
+    font-size: 40px;
+    text-align: center;
+}
+.service {
+    background: white;
+    width: 25%;
+    align-items: left;
+    padding: 15px;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0.5px #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    transition: all 1s ease;
+}
+
+.service:active {
+    box-shadow: inset -3px -3px 15px 0.5px #ccc;
+}
+.service:hover {
+    transform: scale(1.02);
+}
+.service .image-section img {
+    width: 60px;
+}
+.service-heading {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.case-studies {
+    background: white;
+    height: 50vh;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-studies .service-row-one {
+    margin-top: 50px;
+}
+
+.case-studies .main-service-heading {
+    text-transform: uppercase;
+}
+.after-case-studies {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 70px 0px;
+    user-select: none;
+}
+.main-after-case {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.after-case-image {
+    width: 50%;
+}
+.after-case-text {
+    width: 50%;
+}
+.after-case-image img {
+    width: 80%;
+    border-radius: 30px;
+    border: 10px double black;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.after-case-image img:hover {
+    transform: scale(1.02);
+}
+.after-case-text h4 {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.testimonials-section {
+    background: url('./media/images/testimonialsbackground.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 0px;
+    user-select: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.testimonials-section .main-service-heading {
+    text-transform: uppercase;
+}
+.testimonial-main-section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials {
+    width: 33.33%;
+}
+/* Testing Tesimonials */
+article {
+    /* limit the width of the article container */
+    width: 350px;
+    /* display the contents in a column */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(0, 0%, 100%);
+    line-height: 2;
+    border-radius: 10px;
+    margin: 0.5rem;
+    /* transition for the transform property, updated in the script */
+    transition: transform 0.2s ease-out;
+    box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.1);
+  }
+  article figure {
+    /* limit the width and height of the figure to show the image in a circle */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* specify negative margin matching half the height of the element */
+    margin-top: -60px;
+    /* position relative for the pseudo element */
+    position: relative;
+    
+  }
+  article figure:before {
+    /* add a border around the figure matching the color of the background, faking the clip */
+    content: "";
+    border-radius: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border: 1rem solid hsl(250, 85%, 97%);
+    box-shadow: 0 1px hsla(0, 0%, 0%, 0.1);
+  }
+  article figure img {
+    /* stretch the image to cover the size of the wrapping container */
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    /* object fit to maintain the aspect ratio and fit the width/height */
+    object-fit: cover;
+  }
+  
+  article div {
+    /* center the text in the div container */
+    text-align: center;
+    margin: 2rem;
+  }
+  article div p {
+    color: hsl(250, 5%, 45%);
+    font-weight: 400;
+    font-style: italic;
+    margin: 1rem 0 3rem;
+    font-family: "Noticia Text", serif;
+    /* position relative for the pseudo element */
+    position: relative;
+    z-index: 5;
+  }
+  article div p:before {
+    /* with SVG elements include two icons for the quote */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -5;
+    opacity: 0.05;
+    /* position the icons at either end of the paragraph, rotate the second to have a mirrorer image */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70"><rect x="0" y="40" width="30" height="30"></rect><path d="M 0 40 q 0 -40 30 -40 v 15 q -15 0 -15 25"></path><rect x="40" y="40" width="30" height="30"></rect><path d="M 40 40 q 0 -40 30 -40 v 15 q -15 0 -15 25"></path></svg>'),
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" width="70" height="70" transform="rotate(180)"><rect x="0" y="40" width="30" height="30"></rect><path d="M 0 40 q 0 -40 30 -40 v 15 q -15 0 -15 25"></path><rect x="40" y="40" width="30" height="30"></rect><path d="M 40 40 q 0 -40 30 -40 v 15 q -15 0 -15 25"></path></svg>');
+    background-position: 20% 20%, 80% 80%;
+    background-repeat: no-repeat;
+  }
+  article div h1 {
+    /* considerably reduce the size of the heading */
+    color: hsl(260, 5%, 55%);
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+  }
+  .top-clients-work {
+    background: white;
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  .top-clients-work h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .background-main-section {
+        flex-direction: column;
+        /* background: url('./media/images/backgroundmobile.jpg'); */
+        height: 100%;
+        background-size: cover;
+    }
+    #background-video {
+        display: none;
+    }
+    #background-video-mobile {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .background-left-section {
+        width: 100%;
+    }
+    .background-image-section h2 {
+        font-size: 33px;
+        text-align: center;
+    }
+    .background-main-section {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 18%;
+    }
+    .image-button-section {
+        justify-content: center;
+    }
+    .needservice {
+        text-align: center;
+    }
+    .image-button {
+        height: 2rem;
+        font-size: 20px;
+        width: 10rem;
+    }
+    .glimpse-section {
+        height: auto;
+        width: auto;
+    }
+    .glimpse-section h2 {
+        font-size: 30px;
+    }
+    .business-we-own {
+        height: auto;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+
+    .logos-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .logos-section img {
+        margin-top: 20%;
+    }
+    .business-we-own h2 {
+        font-size: 42px;
+    }
+    .service-row-one {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .service-row-one {
+        margin-top: 10px;
+    }
+    .case-studies {
+        height: auto;
+    }
+    .case-studies .main-service-heading {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .main-after-case {
+        flex-direction: column;
+    }
+    .after-case-image {
+        width: 100%;
+    }
+    .after-case-text {
+        width: 100%;
+    }
+    .after-case-image img {
+        width: 100%;
+    }
+    .after-case-text h4 {
+        margin-top: 30px;
+        text-align: justify;
+    }
+    .testimonials-section {
+        height: auto;
+    }
+    .testimonial-main-section {
+        flex-direction: column;
+        width: auto;
+        align-items: flex-start;
+    }
+    .testimonial-two, .testimonial-three {
+        margin-top: 60px;
+    }
+    .top-clients-work h2 {
+        font-size: 30px;
+    }
+   
+  }
